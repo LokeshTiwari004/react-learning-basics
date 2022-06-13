@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+// import ClassClick from './Components/ClassClick';
+// import EventBind from './Components/EventBind';
+import ParentComponent from './Components/ParentComponent';
+// import FunctionClick from './Components/FunctionClick';
+// import Counter from './Components/Counter';
+// import {Greet} from './Components/Greet';
+// import Greet from './Components/Greet';
+// import Message from './Components/Message';
+// import Hello from './Components/Hello';
+// import Welcome from './Components/Welcome';
+
 
 function App() {
+  // const name1 ='lokesh';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Greet name={name1}/> */}
+      {/* <Greet name="Medha">
+        <p>This is children prop</p>
+      </Greet> */}
+      {/* <Welcome name="Deepak" /> */}
+      {/* <Welcome name="Jagdesh" /> */}
+      {/* <Hello /> */}
+      {/* <Message /> */}
+      {/* <Counter /> */}
+      {/* <FunctionClick /> */}
+      {/* <ClassClick /> */}
+      {/* <EventBind /> */}
+      <ParentComponent />
     </div>
   );
 }
