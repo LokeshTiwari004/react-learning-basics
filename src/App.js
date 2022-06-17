@@ -1,6 +1,6 @@
 import './App.css';
 import PersonList from './Components/PersonList';
-// import NameList from './Components/NameList';
+import NameList from './Components/NameList';
 // import UserGreeting from './Components/UserGreeting';
 // import ClassClick from './Components/ClassClick';
 // import EventBind from './Components/EventBind';
@@ -32,7 +32,7 @@ function App() {
       {/* <EventBind /> */}
       {/* <ParentComponent /> */}
       {/* <UserGreeting /> */}
-      {/* <NameList /> */}
+      <NameList />
       <PersonList/>
     </div>
   );
