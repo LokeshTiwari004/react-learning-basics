@@ -1,7 +1,9 @@
 import './App.css';
+import NameList from './Components/NameList';
+// import UserGreeting from './Components/UserGreeting';
 // import ClassClick from './Components/ClassClick';
 // import EventBind from './Components/EventBind';
-import ParentComponent from './Components/ParentComponent';
+// import ParentComponent from './Components/ParentComponent';
 // import FunctionClick from './Components/FunctionClick';
 // import Counter from './Components/Counter';
 // import {Greet} from './Components/Greet';
@@ -27,7 +29,9 @@ function App() {
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      {/* <UserGreeting /> */}
+      <NameList />
     </div>
   );
 }
