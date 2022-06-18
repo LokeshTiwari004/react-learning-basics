@@ -15,7 +15,7 @@ class Counter extends Component {
           count: preState.count + 1
       }),
       () => {
-        console.log("Counter Value",this.state.count);
+        console.log("Counter Value ",this.state.count);
       }
     );
 
