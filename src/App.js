@@ -1,5 +1,5 @@
 import './App.css';
-import Inline from './Components/Inline';
+// import Inline from './Components/Inline';
 // import Stylesheet from './Components/Stylesheet';
 // import PersonList from './Components/PersonList';
 // import NameList from './Components/NameList';
@@ -14,7 +14,8 @@ import Inline from './Components/Inline';
 // import Message from './Components/Message';
 // import Hello from './Components/Hello';
 // import Welcome from './Components/Welcome';
-
+import './appStyle.css';
+import style from './appStyle.module.css';
 
 function App() {
   // const name1 ='lokesh';
@@ -37,7 +38,9 @@ function App() {
       {/* <NameList /> */}
       {/* <PersonList/> */}
       {/* <Stylesheet primary={true}/> */}
-      <Inline />
+      {/* <Inline /> */}
+      <h1 className='error'>Error</h1>
+      <h1 className={style.success}>Success</h1>
     </div>
   );
 }
