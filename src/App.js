@@ -1,5 +1,7 @@
 import './App.css';
-import Form from './Components/Form';
+// import LifecycleA from './Components/LifecycleA';
+import LifecycleC from './Components/LifecycleC';
+// import Form from './Components/Form';
 // import Inline from './Components/Inline';
 // import Stylesheet from './Components/Stylesheet';
 // import PersonList from './Components/PersonList';
@@ -40,12 +42,12 @@ function App() {
       {/* <PersonList/> */}
       {/* <Stylesheet primary={true}/> */}
       {/* <Inline /> */}
-
       {/* <h1 className='error'>Error</h1>
       <h1 className={style.success}>Success</h1> */}
-
-      <Form />
+      {/* <Form /> */}
     
+      {/* <LifecycleA /> */}
+      <LifecycleC />
     </div>
   );
 }
