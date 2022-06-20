@@ -12,6 +12,7 @@ class Form extends Component {
     this.state = {
       email: "example@abc.xyz",
       comment: "Write your Comments here!",
+      language: "Rust",
     };
   }
 
@@ -21,7 +22,7 @@ class Form extends Component {
   //     email: event.target.value,
   //   });
   // };
-  
+
   // handleComment = (event) => {
   //   console.log(event.target.name);
   //   this.setState({
@@ -29,17 +30,20 @@ class Form extends Component {
   //   });
   // };
 
-
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,
     });
   };
-  
+
+  handleSubmit = (event) => {
+    alert(`${this.state.email} ${this.state.comment} ${this.state.language}`);
+    event.preventDefault();
+  };
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <legend>Comment Section</legend>
         <fieldset>
           <label htmlFor="email">Email: </label>
@@ -60,6 +64,21 @@ class Form extends Component {
             value={this.state.comment}
             onChange={this.handleChange}
           />
+          <br />
+          <br />
+          <label htmlFor="languages">Your Language: </label>
+          <select
+            name="language"
+            id="languages"
+            onChange={this.handleChange}
+            value={this.state.language}
+          >
+            <option value="HTML">HTML</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Rust">Rust</option>
+            <option value="Python">Python</option>
+          </select>
+          <button type="submit">Submit</button>
         </fieldset>
       </form>
     );
